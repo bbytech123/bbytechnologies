@@ -592,10 +592,10 @@ h3 {
 }
 
 
-/* Version 4 revised: organic blue hero background */
+/* Version 5: soft organic blue hero background */
 .hero {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   grid-template-columns: 1fr;
   isolation: isolate;
 }
@@ -608,12 +608,17 @@ h3 {
 .hero-blob {
   position: absolute;
   z-index: -1;
-  inset: 18px -150px 4px -185px;
+  top: 24px;
+  left: 50%;
+  width: calc(100vw + 460px);
+  height: 690px;
+  transform: translateX(-50%);
   pointer-events: none;
-  opacity: 0.9;
+  opacity: 0.92;
 }
 
 .hero-blob svg {
+  display: block;
   width: 100%;
   height: 100%;
   overflow: visible;
@@ -621,12 +626,12 @@ h3 {
 
 .hero-blob .blob-main {
   transform-origin: 48% 48%;
-  animation: blobDrift 18s ease-in-out infinite alternate;
+  animation: blobDrift 20s ease-in-out infinite alternate;
 }
 
-.hero-blob .blob-secondary {
-  transform-origin: 72% 70%;
-  animation: blobDriftTwo 22s ease-in-out infinite alternate;
+.hero-blob .blob-glow {
+  transform-origin: 52% 52%;
+  animation: blobGlowDrift 24s ease-in-out infinite alternate;
 }
 
 .hero-copy {
@@ -636,25 +641,34 @@ h3 {
 }
 
 @keyframes blobDrift {
-  from { transform: translate3d(-8px, 3px, 0) scale(1); }
-  to { transform: translate3d(20px, -10px, 0) scale(1.025); }
+  from { transform: translate3d(-6px, 2px, 0) scale(1); }
+  to { transform: translate3d(16px, -7px, 0) scale(1.018); }
 }
 
-@keyframes blobDriftTwo {
-  from { transform: translate3d(8px, 0, 0) scale(1); }
-  to { transform: translate3d(-16px, 9px, 0) scale(1.04); }
+@keyframes blobGlowDrift {
+  from { transform: translate3d(8px, 0, 0) scale(1.01); }
+  to { transform: translate3d(-13px, 8px, 0) scale(1.045); }
 }
 
 @media (max-width: 900px) {
+  .hero {
+    overflow: hidden;
+  }
+
   .hero-blob {
-    inset: 10px -370px -15px -300px;
-    opacity: 0.78;
+    left: 47%;
+    width: 175vw;
+    height: 700px;
+    opacity: 0.72;
   }
 }
 
 @media (max-width: 620px) {
   .hero-blob {
-    inset: 5px -500px 0 -430px;
-    opacity: 0.65;
+    left: 42%;
+    top: 20px;
+    width: 235vw;
+    height: 620px;
+    opacity: 0.58;
   }
 }
