@@ -634,3 +634,91 @@ h3 {
     top: 31%;
   }
 }
+
+
+/* Version 4: abstract blue hero background */
+.hero {
+  overflow: hidden;
+  grid-template-columns: minmax(0, 760px) 1fr;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 1120px;
+  height: 720px;
+  left: -230px;
+  top: 70px;
+  opacity: 0.62;
+  background:
+    radial-gradient(circle at 24% 30%, rgba(81, 143, 255, 0.62), transparent 44%),
+    radial-gradient(circle at 72% 40%, rgba(125, 172, 255, 0.52), transparent 50%),
+    linear-gradient(135deg, rgba(96, 154, 255, 0.62), rgba(207, 225, 255, 0.45));
+  border-radius: 48% 52% 61% 39% / 42% 38% 62% 58%;
+  filter: blur(1px);
+  transform: rotate(-3deg);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  width: 620px;
+  height: 500px;
+  right: -70px;
+  bottom: 10px;
+  opacity: 0.46;
+  background:
+    radial-gradient(circle at 34% 28%, rgba(120, 171, 255, 0.55), transparent 46%),
+    linear-gradient(145deg, rgba(148, 188, 255, 0.48), rgba(222, 234, 255, 0.42));
+  border-radius: 58% 42% 38% 62% / 44% 52% 48% 56%;
+  filter: blur(2px);
+  transform: rotate(8deg);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-brand-mark,
+.hero-brand-mark img {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .hero::before {
+    width: 980px;
+    height: 690px;
+    left: -360px;
+    top: 40px;
+    opacity: 0.52;
+  }
+
+  .hero::after {
+    width: 520px;
+    height: 430px;
+    right: -240px;
+    bottom: -20px;
+    opacity: 0.38;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero::before {
+    width: 760px;
+    height: 650px;
+    left: -370px;
+    top: 20px;
+    opacity: 0.42;
+  }
+
+  .hero::after {
+    width: 430px;
+    height: 360px;
+    right: -260px;
+    bottom: 10px;
+    opacity: 0.30;
+  }
+}
