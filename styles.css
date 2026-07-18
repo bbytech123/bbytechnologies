@@ -4,6 +4,9 @@
   --navy-800: #0a2d59;
   --blue-600: #1f72d6;
   --blue-400: #58a9ff;
+  --blue-300: #83c4ff;
+  --blue-gradient: linear-gradient(135deg, var(--navy-900), var(--blue-600));
+  --blue-gradient-soft: linear-gradient(135deg, rgba(31, 114, 214, 0.10), rgba(88, 169, 255, 0.22));
   --ice: #e9f3ff;
   --white: #ffffff;
   --ink: #0b1b2f;
@@ -106,8 +109,9 @@ a {
 .nav-contact {
   padding: 9px 14px;
   color: var(--white);
-  background: var(--navy-900);
+  background: var(--blue-gradient);
   border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(31, 114, 214, 0.18);
 }
 
 .nav-contact:hover {
@@ -210,7 +214,7 @@ h3 {
 
 .button-primary {
   color: var(--white);
-  background: linear-gradient(135deg, var(--navy-900), var(--blue-600));
+  background: var(--blue-gradient);
   box-shadow: 0 12px 28px rgba(31, 114, 214, 0.24);
 }
 
@@ -233,10 +237,15 @@ h3 {
   filter: blur(24px);
 }
 
+.hero-visual {
+  display: grid;
+  place-items: center;
+  min-height: 500px;
+}
+
 .hero-visual img {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
+  width: min(78%, 430px);
+  filter: drop-shadow(0 28px 34px rgba(3, 22, 47, 0.18));
   transform: rotate(1.5deg);
 }
 
@@ -252,6 +261,16 @@ h3 {
   margin-bottom: 0;
 }
 
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  margin-top: 24px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--navy-900), var(--blue-400));
+}
+
 .pillar-grid,
 .project-grid {
   display: grid;
@@ -263,7 +282,7 @@ h3 {
 .project-card {
   min-height: 260px;
   padding: 30px;
-  background: var(--white);
+  background: linear-gradient(160deg, var(--white) 70%, rgba(88, 169, 255, 0.10));
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   box-shadow: 0 14px 45px rgba(3, 22, 47, 0.06);
@@ -295,7 +314,9 @@ h3 {
 
 .process-section {
   color: var(--white);
-  background: linear-gradient(145deg, var(--navy-950), var(--navy-800));
+  background:
+    radial-gradient(circle at 85% 15%, rgba(88, 169, 255, 0.18), transparent 34%),
+    linear-gradient(145deg, var(--navy-950), var(--navy-800));
 }
 
 .process-section h2,
@@ -353,7 +374,10 @@ h3 {
   gap: 70px;
   align-items: end;
   padding: 56px;
-  background: var(--ice);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0)),
+    var(--blue-gradient-soft);
+  border: 1px solid rgba(31, 114, 214, 0.12);
   border-radius: var(--radius-lg);
 }
 
@@ -366,7 +390,9 @@ h3 {
   margin-top: 80px;
   padding-block: 110px;
   color: var(--white);
-  background: var(--navy-950);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(31, 114, 214, 0.20), transparent 42%),
+    var(--navy-950);
 }
 
 .contact-inner {
