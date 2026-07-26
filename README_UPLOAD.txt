@@ -1,11 +1,15 @@
-BBY Technologies Website Update — Root Image Files
+BBY Technologies — Custom Websites Page
 
-Upload every file in this folder directly to the ROOT of your GitHub repository.
-Do not create or upload an assets folder.
+Upload these four items to the ROOT of your GitHub repository:
 
-The three image files must also be uploaded individually to the repository root using these exact names:
-- network_visual.png
-- smart_home_network.png
-- gamer_office_network.png
+1. custom-websites.html           (new page)
+2. custom_website_mockup.png      (new hero image)
+3. infrastructure.html            (replace existing file)
+4. styles.css                     (replace existing file)
 
-Replace the existing HTML, CSS, and JavaScript files when prompted.
+script.js is included only as a backup. Your existing script.js does not need to be replaced if it is already working.
+
+After uploading, wait about one minute and refresh the website using Ctrl + F5.
+
+The new page URL will be:
+https://bbytechnologies.com/custom-websites.html
