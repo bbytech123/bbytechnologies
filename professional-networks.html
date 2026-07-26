@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional network design for small businesses, intelligent homes, and high-performance home offices from BBY Technologies." />
+  <title>Professional Networks | BBY Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="BBY Technologies home">
+      <span class="brand-mark">BBY</span><span class="brand-name">Technologies</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle active" type="button" aria-expanded="false">Services <span aria-hidden="true">⌄</span></button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-submenu">
+            <a class="nav-submenu-label" href="infrastructure.html">Infrastructure <span aria-hidden="true">›</span></a>
+            <div class="nav-submenu-panel"><a class="active" href="professional-networks.html">Professional Networks</a></div>
+          </div>
+          <a href="ai.html">AI</a><a href="automation.html">Automation</a>
+        </div>
+      </div>
+      <a href="index.html#process">How It Works</a><a href="index.html#about">About</a><a class="nav-contact" href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="service-hero">
+      <div class="service-hero-blob" aria-hidden="true"></div>
+      <div class="section-shell service-hero-inner reveal">
+        <p class="eyebrow">Services / Infrastructure</p>
+        <h1>Professional Networks</h1>
+        <p>High-performance, secure, and reliable networks designed for how you live and work.</p>
+      </div>
+    </section>
+
+    <div class="breadcrumb-bar">
+      <div class="section-shell breadcrumbs"><a href="index.html">Home</a><span>›</span><a href="index.html#services">Services</a><span>›</span><a href="infrastructure.html">Infrastructure</a><span>›</span><strong>Professional Networks</strong></div>
+    </div>
+
+    <section class="content-section section-shell network-intro">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow">Designed around you</p>
+        <h2>Networks built for every environment.</h2>
+        <p>From small businesses to intelligent homes and high-performance offices, I design networks that are fast, secure, and built to handle what matters most.</p>
+      </div>
+
+      <div class="network-service-list">
+        <article class="network-service-card reveal">
+          <div class="network-service-copy">
+            <span class="service-icon">▦</span><h3>Small Business</h3>
+            <p>Reliable, secure, and scalable networks that keep your team productive and your business running smoothly.</p>
+            <ul><li>Fast and reliable internet</li><li>Secure guest and employee access</li><li>Scalable infrastructure for growth</li></ul>
+            <a class="button button-primary" href="index.html#contact">Start a Conversation</a>
+          </div>
+          <div class="network-service-visual"><img src="assets/network_visual.png" alt="Professional network infrastructure for a small business" /></div>
+        </article>
+
+        <article class="network-service-card reveal">
+          <div class="network-service-copy">
+            <span class="service-icon">⌂</span><h3>Intelligent Home</h3>
+            <p>Smart, secure Wi-Fi throughout your home for streaming, gaming, smart devices, remote work, and more.</p>
+            <ul><li>Whole-home Wi-Fi coverage</li><li>Smart-device connectivity</li><li>Security for your family and data</li></ul>
+            <a class="button button-primary" href="index.html#contact">Start a Conversation</a>
+          </div>
+          <div class="network-service-visual"><img src="assets/smart_home_network.png" alt="Intelligent home network with whole-home Wi-Fi and connected devices" /></div>
+        </article>
+
+        <article class="network-service-card reveal">
+          <div class="network-service-copy">
+            <span class="service-icon">⚡</span><h3>Intense Office</h3>
+            <p>Low-latency, high-bandwidth networking for streaming, gaming, content creation, video conferencing, or anyone who wants an uncompromising home office.</p>
+            <ul><li>Ultra-low latency</li><li>High bandwidth for demanding workloads</li><li>Wired and wireless performance optimization</li></ul>
+            <a class="button button-primary" href="index.html#contact">Start a Conversation</a>
+          </div>
+          <div class="network-service-visual"><img src="assets/intense_office_network.png" alt="High-performance intense office network for streaming, gaming, and content creation" /></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="service-cta section-shell reveal">
+      <div><p class="eyebrow">Your setup. Built right.</p><h2>Let’s build the right network for you.</h2><p>Tell me about your space, devices, and goals. I’ll recommend a practical solution built around the way you work.</p></div>
+      <div class="hero-actions"><a class="button button-primary" href="index.html#contact">Start a Conversation</a><a class="button button-secondary" href="index.html#services">View All Services</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell"><div><strong>BBY Technologies</strong><p>Infrastructure • AI • Automation</p></div><p>© <span id="year"></span> BBY Technologies. Austin, Texas.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

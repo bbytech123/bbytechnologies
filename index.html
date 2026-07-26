@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="BBY Technologies home">
+    <a class="brand" href="index.html#top" aria-label="BBY Technologies home">
       <span class="brand-mark">BBY</span>
       <span class="brand-name">Technologies</span>
     </a>
@@ -20,10 +20,24 @@
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="#services">Services</a>
-      <a href="#process">How It Works</a>
-      <a href="#about">About</a>
-      <a class="nav-contact" href="#contact">Contact</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+          Services <span aria-hidden="true">⌄</span>
+        </button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-submenu">
+            <a class="nav-submenu-label" href="infrastructure.html">Infrastructure <span aria-hidden="true">›</span></a>
+            <div class="nav-submenu-panel">
+              <a href="professional-networks.html">Professional Networks</a>
+            </div>
+          </div>
+          <a href="ai.html">AI</a>
+          <a href="automation.html">Automation</a>
+        </div>
+      </div>
+      <a href="index.html#process">How It Works</a>
+      <a href="index.html#about">About</a>
+      <a class="nav-contact" href="index.html#contact">Contact</a>
     </nav>
   </header>
 
@@ -72,23 +86,26 @@
       </div>
 
       <div class="pillar-grid">
-        <article class="pillar-card reveal">
+        <a class="pillar-card reveal" href="infrastructure.html">
           <span class="card-number">01</span>
           <h3>Infrastructure</h3>
           <p>Improve your Wi-Fi, network, security, Microsoft 365, and overall technology setup.</p>
-        </article>
+          <span class="card-link">Explore Infrastructure →</span>
+        </a>
 
-        <article class="pillar-card reveal">
+        <a class="pillar-card reveal" href="ai.html">
           <span class="card-number">02</span>
           <h3>AI</h3>
           <p>Learn simple ways AI can save time and make everyday work easier.</p>
-        </article>
+          <span class="card-link">Explore AI →</span>
+        </a>
 
-        <article class="pillar-card reveal">
+        <a class="pillar-card reveal" href="automation.html">
           <span class="card-number">03</span>
           <h3>Automation</h3>
           <p>Reduce repetitive tasks by automating common business processes.</p>
-        </article>
+          <span class="card-link">Explore Automation →</span>
+        </a>
       </div>
     </section>
 
