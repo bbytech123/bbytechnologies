@@ -1,17 +1,11 @@
-BBY Technologies Website Update
+BBY Technologies Website Update — Root Image Files
 
-Upload all included files and folders to the root of your GitHub Pages repository.
+Upload every file in this folder directly to the ROOT of your GitHub repository.
+Do not create or upload an assets folder.
 
-Files included:
-- index.html
-- infrastructure.html
-- professional-networks.html
-- ai.html
-- automation.html
-- styles.css
-- script.js
-- assets/ folder with three network visuals
+The three image files must also be uploaded individually to the repository root using these exact names:
+- network_visual.png
+- smart_home_network.png
+- gamer_office_network.png
 
-Important:
-Keep the assets folder name and image filenames exactly as provided.
-When GitHub asks whether to replace index.html, styles.css, and script.js, replace them.
+Replace the existing HTML, CSS, and JavaScript files when prompted.
