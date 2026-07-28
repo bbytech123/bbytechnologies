@@ -1,15 +1,11 @@
-BBY Technologies — Custom Websites Page
+BBY Technologies — Security Icons Update
 
-Upload these four items to the ROOT of your GitHub repository:
+Upload both files to the ROOT of your GitHub repository:
 
-1. custom-websites.html           (new page)
-2. custom_website_mockup.png      (new hero image)
-3. infrastructure.html            (replace existing file)
-4. styles.css                     (replace existing file)
+1. custom-websites.html — replace the existing file
+2. styles.css — replace the existing file
 
-script.js is included only as a backup. Your existing script.js does not need to be replaced if it is already working.
+This update changes only the circular icons surrounding the security lock.
+The page text, section order, and overall page layout remain unchanged.
 
-After uploading, wait about one minute and refresh the website using Ctrl + F5.
-
-The new page URL will be:
-https://bbytechnologies.com/custom-websites.html
+After committing, wait about one minute and refresh with Ctrl + F5.
