@@ -1,26 +1,17 @@
-BBY Technologies — AI Agents Page
+BBY Technologies — AI Agents Showcase Update
 
-Upload both files to the ROOT of your GitHub repository:
+Upload both files to the ROOT of your GitHub repository and replace the existing versions:
 
-1. ai-agents.html — new page
-2. styles.css — replace the existing stylesheet
+1. ai-agents.html
+2. styles.css
 
-Keep your existing script.js.
+This update keeps the existing AI Agents header, breadcrumb, footer, fonts, and color scheme.
+The middle of the page is replaced with four Professional Networks-style agent examples:
+- Financial Analyst
+- Social Media Management
+- Sales Assistant
+- Customer Support Agent
 
-This page matches the Professional Networks page structure:
-- Simple service hero
-- Services / AI eyebrow
-- Breadcrumb navigation
-- Existing BBY Technologies fonts and colors
-- White and blue design
-- Responsive desktop and mobile layout
+The Learn More buttons have been removed.
 
-The page URL will be:
-https://bbytechnologies.com/ai-agents.html
-
-The current AI landing page already links to ai-agents.html.
-
-After uploading:
-1. Commit the files.
-2. Wait approximately one minute.
-3. Refresh with Ctrl + F5.
+After committing, wait approximately one minute and refresh with Ctrl + F5.

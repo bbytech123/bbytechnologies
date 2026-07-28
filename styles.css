@@ -1126,52 +1126,48 @@ h3 {
   .node-six { display: none; }
 }
 
-
 /* AI Agents page */
-.ai-agents-intro {
-  padding-top: 76px;
+.ai-agents-intro { padding-top: 76px; }
+
+.ai-agent-showcase-list {
+  display: grid;
+  gap: 22px;
+  margin-top: 54px;
 }
 
-.ai-agent-hero-card {
+.ai-agent-showcase-card {
   display: grid;
-  grid-template-columns: minmax(300px, .82fr) minmax(0, 1.18fr);
+  grid-template-columns: minmax(300px, .78fr) minmax(0, 1.22fr);
+  min-height: 455px;
   overflow: hidden;
-  margin-top: 52px;
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 18px 55px rgba(3, 22, 47, .08);
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 50px rgba(3,22,47,.07);
 }
 
-.ai-agent-copy {
-  padding: 46px;
+.ai-agent-showcase-copy { padding: 38px; }
+.ai-agent-number {
+  margin: 12px 0 5px;
+  color: var(--blue-600);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .10em;
 }
-
-.ai-agent-copy h3 {
-  margin-bottom: 18px;
+.ai-agent-showcase-copy h3 {
+  margin-bottom: 14px;
   font-family: "Playfair Display", serif;
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
-  line-height: 1.08;
+  font-size: clamp(2rem,3vw,2.7rem);
 }
-
-.ai-agent-copy > p:not(.eyebrow),
-.ai-agent-copy li {
+.ai-agent-showcase-copy > p:not(.ai-agent-number) { color: var(--slate); }
+.ai-agent-showcase-copy ul { margin: 23px 0 0; padding: 0; list-style: none; }
+.ai-agent-showcase-copy li {
+  position: relative;
+  margin: 9px 0;
+  padding-left: 24px;
   color: var(--slate);
 }
-
-.ai-agent-copy ul {
-  margin: 26px 0;
-  padding: 0;
-  list-style: none;
-}
-
-.ai-agent-copy li {
-  position: relative;
-  margin: 10px 0;
-  padding-left: 26px;
-}
-
-.ai-agent-copy li::before {
+.ai-agent-showcase-copy li::before {
   content: "✓";
   position: absolute;
   left: 0;
@@ -1179,337 +1175,104 @@ h3 {
   font-weight: 800;
 }
 
-.ai-agent-copy .button {
-  margin-top: 12px;
-}
-
-.ai-agent-diagram {
+.ai-agent-showcase-visual {
   position: relative;
-  min-height: 590px;
+  min-height: 455px;
+  overflow: hidden;
+  padding: 34px;
   background:
-    radial-gradient(circle at 50% 48%, rgba(88, 169, 255, .34), transparent 31%),
-    radial-gradient(circle at 50% 50%, rgba(31, 114, 214, .14), transparent 62%),
-    linear-gradient(145deg, #f8fbff, #eaf3ff);
-  isolation: isolate;
+    radial-gradient(circle at 70% 20%, rgba(88,169,255,.22), transparent 36%),
+    linear-gradient(145deg,#f8fbff,#eaf3ff);
 }
-
-.ai-agent-diagram::before,
-.ai-agent-diagram::after {
-  content: "";
+.ai-agent-showcase-visual::before {
+  content: "AI";
   position: absolute;
-  inset: 18%;
-  z-index: -1;
-  border: 1px solid rgba(31, 114, 214, .16);
-  border-radius: 50%;
-}
-
-.ai-agent-diagram::after {
-  inset: 31%;
-  border-style: dashed;
-}
-
-.agent-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 22px;
+  right: 24px;
   display: grid;
-  width: 150px;
-  height: 150px;
-  place-content: center;
-  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  place-items: center;
   color: var(--white);
-  text-align: center;
-  background:
-    radial-gradient(circle at 35% 28%, rgba(88,169,255,.9), transparent 34%),
-    linear-gradient(145deg, var(--blue-600), var(--navy-900));
-  border: 9px solid rgba(233,243,255,.92);
+  background: var(--blue-gradient);
+  border: 6px solid rgba(233,243,255,.94);
   border-radius: 50%;
-  box-shadow: 0 24px 60px rgba(31,114,214,.30);
-}
-
-.agent-center span {
-  font-family: "Playfair Display", serif;
-  font-size: 3rem;
+  box-shadow: 0 14px 32px rgba(31,114,214,.24);
+  font-family: "Playfair Display",serif;
   font-weight: 700;
-  line-height: .9;
 }
 
-.agent-center small {
-  margin-top: 10px;
-  font-size: .72rem;
-  font-weight: 800;
-  letter-spacing: .16em;
+.agent-visual-header { display:flex; justify-content:space-between; margin: 12px 76px 22px 0; color:var(--navy-900); }
+.agent-visual-header small { color:var(--slate); }
+.market-stat-row { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.market-stat-row > div,
+.agent-report-card,
+.social-schedule-card,
+.social-post-card,
+.social-message-card,
+.sales-leads-card,
+.proposal-card,
+.followup-card,
+.chat-card,
+.appointment-card {
+  background:rgba(255,255,255,.95);
+  border:1px solid rgba(31,114,214,.16);
+  border-radius:14px;
+  box-shadow:0 14px 36px rgba(3,22,47,.08);
 }
+.market-stat-row > div { padding:17px; }
+.market-stat-row small { display:block; color:var(--slate); }
+.market-stat-row strong { display:block; margin:7px 0; color:#21965b; font-size:1.2rem; }
+.mini-chart { display:block; height:36px; background:linear-gradient(165deg,transparent 48%,rgba(33,150,91,.25) 49%,rgba(33,150,91,.25) 56%,transparent 57%); }
+.agent-report-card { display:grid; grid-template-columns:44px 1fr; gap:15px; margin-top:18px; padding:20px; }
+.report-icon { display:grid; width:44px; height:44px; place-items:center; color:var(--blue-600); background:var(--ice); border-radius:11px; }
+.agent-report-card p { margin:5px 0 0; color:var(--slate); font-size:.88rem; }
+.agent-delivery-pill { position:absolute; right:34px; bottom:28px; padding:12px 16px; color:var(--navy-900); background:#fff; border:1px solid rgba(31,114,214,.18); border-radius:12px; box-shadow:0 12px 28px rgba(3,22,47,.08); font-size:.82rem; font-weight:700; }
 
-.agent-node {
-  position: absolute;
-  display: flex;
-  min-width: 150px;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 16px;
-  background: rgba(255,255,255,.96);
-  border: 1px solid rgba(31,114,214,.18);
-  border-radius: 14px;
-  box-shadow: 0 14px 36px rgba(3,22,47,.10);
+.social-visual { display:grid; grid-template-columns:.78fr 1.05fr .95fr; gap:14px; align-items:center; }
+.social-schedule-card,.social-message-card { padding:18px; }
+.social-schedule-card strong,.social-message-card strong { display:block; margin-bottom:14px; }
+.social-schedule-card div { display:flex; justify-content:space-between; gap:8px; margin:10px 0; color:var(--slate); font-size:.78rem; }
+.social-post-card { padding:14px; }
+.social-image { height:150px; border-radius:10px; background:linear-gradient(145deg,#b8d6ff,#2d74ca); }
+.social-actions { margin:10px 0 3px; color:var(--blue-600); }
+.social-post-card p,.social-message-card p { color:var(--slate); font-size:.78rem; }
+.social-message-card p { padding:10px; background:#f5f9ff; border-radius:9px; }
+
+.sales-visual { display:grid; grid-template-columns:.8fr 1.12fr .9fr; gap:14px; align-items:center; }
+.sales-leads-card,.proposal-card,.followup-card { padding:18px; }
+.sales-leads-card strong,.followup-card strong { display:block; margin-bottom:14px; }
+.sales-leads-card p { display:flex; align-items:center; gap:9px; color:var(--slate); font-size:.8rem; }
+.sales-leads-card p span { display:grid; width:25px; height:25px; place-items:center; color:#fff; background:var(--blue-600); border-radius:50%; font-size:.7rem; }
+.proposal-card small { color:var(--blue-600); }
+.proposal-card strong { display:block; margin:10px 0 18px; }
+.proposal-lines { height:95px; background:repeating-linear-gradient(to bottom,rgba(82,97,115,.18) 0 6px,transparent 6px 18px); }
+.proposal-card button { width:100%; padding:9px; border:0; color:#fff; background:var(--blue-600); border-radius:8px; font:inherit; font-size:.75rem; font-weight:700; }
+.followup-card p { padding:9px 0; color:var(--slate); border-bottom:1px solid var(--line); font-size:.77rem; }
+
+.support-visual { display:grid; grid-template-columns:1fr 120px .82fr; gap:24px; align-items:center; }
+.chat-card,.appointment-card { padding:20px; }
+.chat-in,.chat-out { max-width:88%; padding:10px 12px; border-radius:10px; font-size:.78rem; }
+.chat-in { background:#f1f5fb; color:var(--slate); }
+.chat-out { margin-left:auto; color:#fff; background:var(--blue-600); }
+.support-agent-core { display:grid; width:104px; height:104px; place-items:center; color:#fff; background:var(--blue-gradient); border:10px solid rgba(233,243,255,.94); border-radius:50%; box-shadow:0 18px 40px rgba(31,114,214,.25); font-family:"Playfair Display",serif; font-size:2rem; font-weight:700; }
+.appointment-card { text-align:center; }
+.appointment-card small,.appointment-card span { display:block; color:var(--slate); }
+.appointment-card strong { display:block; margin:14px 0 4px; font-size:1.35rem; }
+.appointment-card p { margin:15px 0 0; padding-top:12px; border-top:1px solid var(--line); color:var(--slate); font-size:.78rem; }
+.support-channel-row { position:absolute; right:34px; bottom:28px; left:34px; display:grid; grid-template-columns:repeat(4,1fr); gap:9px; }
+.support-channel-row span { padding:10px; text-align:center; color:var(--navy-900); background:#fff; border:1px solid rgba(31,114,214,.16); border-radius:10px; font-size:.72rem; font-weight:700; }
+
+@media (max-width: 980px) {
+  .ai-agent-showcase-card { grid-template-columns:1fr; }
+  .ai-agent-showcase-visual { min-height:430px; }
 }
-
-.agent-node::after {
-  content: "";
-  position: absolute;
-  width: 110px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--blue-400), rgba(88,169,255,.15));
-  box-shadow: 0 0 12px rgba(88,169,255,.35);
-}
-
-.agent-node span {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
-  color: var(--blue-600);
-  background: var(--ice);
-  border-radius: 10px;
-  font-weight: 800;
-}
-
-.agent-node strong {
-  color: var(--navy-900);
-  font-size: .86rem;
-}
-
-.node-calendar { top: 8%; left: 50%; transform: translateX(-50%); }
-.node-calendar::after { top: calc(100% + 44px); left: 50%; transform: translateX(-50%) rotate(90deg); }
-
-.node-email { top: 25%; right: 4%; }
-.node-email::after { right: 100%; top: 50%; transform: rotate(180deg); }
-
-.node-chat { bottom: 25%; right: 4%; }
-.node-chat::after { right: 100%; top: 50%; transform: rotate(180deg); }
-
-.node-crm { bottom: 8%; left: 50%; transform: translateX(-50%); }
-.node-crm::after { bottom: calc(100% + 44px); left: 50%; transform: translateX(-50%) rotate(-90deg); }
-
-.node-docs { bottom: 25%; left: 4%; }
-.node-docs::after { left: 100%; top: 50%; }
-
-.node-reports { top: 25%; left: 4%; }
-.node-reports::after { left: 100%; top: 50%; }
-
-.ai-agent-types-section {
-  padding-block: 105px;
-  background: linear-gradient(180deg, #ffffff, #f2f7fd);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.ai-agent-type-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-
-.ai-agent-type-card {
-  min-height: 390px;
-  padding: 28px;
-  background: linear-gradient(160deg, var(--white) 72%, rgba(88,169,255,.10));
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  box-shadow: 0 15px 44px rgba(3,22,47,.06);
-}
-
-.agent-type-icon {
-  display: grid;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 42px;
-  place-items: center;
-  color: var(--blue-600);
-  background: var(--ice);
-  border-radius: 14px;
-  font-size: 1.35rem;
-  font-weight: 800;
-}
-
-.ai-agent-type-card p,
-.ai-agent-type-card li {
-  color: var(--slate);
-}
-
-.ai-agent-type-card ul {
-  margin: 22px 0 0;
-  padding-left: 18px;
-}
-
-.ai-agent-type-card li {
-  margin: 7px 0;
-  font-size: .91rem;
-}
-
-.ai-agent-industry-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 14px;
-}
-
-.ai-agent-industry {
-  display: grid;
-  min-height: 142px;
-  place-content: center;
-  gap: 14px;
-  padding: 20px;
-  text-align: center;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  box-shadow: 0 12px 34px rgba(3,22,47,.05);
-}
-
-.ai-agent-industry span {
-  color: var(--blue-600);
-  font-size: 1.75rem;
-}
-
-.ai-agent-process {
-  margin-bottom: 56px;
-  padding: 54px 42px;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 18px 55px rgba(3,22,47,.06);
-}
-
-.ai-agent-process-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-.ai-agent-process-grid article {
-  position: relative;
-  text-align: center;
-}
-
-.ai-agent-process-grid article:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: calc(50% + 25px);
-  width: calc(100% - 28px);
-  border-top: 1px dashed rgba(31,114,214,.35);
-}
-
-.ai-agent-process-grid article > span {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 20px;
-  place-items: center;
-  color: var(--white);
-  background: var(--blue-600);
-  border-radius: 50%;
-  font-weight: 800;
-}
-
-.ai-agent-process-grid h3 {
-  font-size: 1.05rem;
-}
-
-.ai-agent-process-grid p {
-  color: var(--slate);
-  font-size: .87rem;
-}
-
-@media (max-width: 1050px) {
-  .ai-agent-hero-card {
-    grid-template-columns: 1fr;
-  }
-
-  .ai-agent-diagram {
-    min-height: 560px;
-  }
-
-  .ai-agent-type-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .ai-agent-industry-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 760px) {
-  .ai-agent-copy {
-    padding: 30px;
-  }
-
-  .ai-agent-diagram {
-    min-height: 520px;
-  }
-
-  .agent-node {
-    min-width: 122px;
-    padding: 10px 11px;
-  }
-
-  .agent-node::after {
-    width: 72px;
-  }
-
-  .agent-node strong {
-    font-size: .74rem;
-  }
-
-  .agent-node span {
-    width: 31px;
-    height: 31px;
-  }
-
-  .ai-agent-type-grid,
-  .ai-agent-industry-grid,
-  .ai-agent-process-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .ai-agent-process-grid article:not(:last-child)::after {
-    display: none;
-  }
-
-  .ai-agent-process {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 520px) {
-  .ai-agent-diagram {
-    min-height: 470px;
-  }
-
-  .agent-center {
-    width: 122px;
-    height: 122px;
-  }
-
-  .agent-center span {
-    font-size: 2.45rem;
-  }
-
-  .agent-node {
-    min-width: 105px;
-    gap: 7px;
-  }
-
-  .agent-node::after {
-    display: none;
-  }
-
-  .node-calendar { top: 5%; }
-  .node-email { top: 24%; right: 1%; }
-  .node-chat { bottom: 24%; right: 1%; }
-  .node-crm { bottom: 5%; }
-  .node-docs { bottom: 24%; left: 1%; }
-  .node-reports { top: 24%; left: 1%; }
+@media (max-width: 700px) {
+  .ai-agent-showcase-copy { padding:28px; }
+  .ai-agent-showcase-visual { min-height:520px; padding:22px; }
+  .market-stat-row { grid-template-columns:1fr; }
+  .social-visual,.sales-visual,.support-visual { display:grid; grid-template-columns:1fr; align-content:start; }
+  .support-agent-core { margin:0 auto; }
+  .agent-delivery-pill { position:static; margin-top:14px; }
+  .support-channel-row { position:static; grid-template-columns:repeat(2,1fr); margin-top:14px; }
 }
