@@ -1,15 +1,15 @@
-BBY Technologies — Website Benefit Icons Update
+BBY Technologies — Fixed Website Benefit Icons
 
-Upload both files to the ROOT of your GitHub repository:
+Upload both files to the ROOT of your GitHub repository and replace the existing versions:
 
-1. custom-websites.html — replace the existing file
-2. styles.css — replace the existing file
+1. custom-websites.html
+2. styles.css
 
-This update changes only the three icons for:
+This fixes the rendering of the three icons:
 - Modern Design
 - Mobile Friendly
 - Built to Convert
 
-The wording, page layout, and all other sections remain unchanged.
+No page text, section order, or other layout was changed.
 
 After committing, wait about one minute and refresh with Ctrl + F5.
