@@ -1,21 +1,26 @@
-BBY Technologies — AI Services Landing Page
+BBY Technologies — AI Agents Page
 
-Upload ai.html to the ROOT of your GitHub repository and replace the current ai.html file.
+Upload both files to the ROOT of your GitHub repository:
 
-This page uses your existing:
-- styles.css
-- script.js
-- fonts
-- navigation
-- mobile layout
+1. ai-agents.html — new page
+2. styles.css — replace the existing stylesheet
 
-The two service cards link to:
-- ai-consulting.html
-- ai-agents.html
+Keep your existing script.js.
 
-Those two destination pages have not been created yet, so the links will begin working after those pages are added.
+This page matches the Professional Networks page structure:
+- Simple service hero
+- Services / AI eyebrow
+- Breadcrumb navigation
+- Existing BBY Technologies fonts and colors
+- White and blue design
+- Responsive desktop and mobile layout
+
+The page URL will be:
+https://bbytechnologies.com/ai-agents.html
+
+The current AI landing page already links to ai-agents.html.
 
 After uploading:
-1. Commit the change.
+1. Commit the files.
 2. Wait approximately one minute.
-3. Refresh https://bbytechnologies.com/ai.html using Ctrl + F5.
+3. Refresh with Ctrl + F5.
