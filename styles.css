@@ -789,12 +789,24 @@ h3 {
 
 .website-icon {
   display: inline-grid;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   place-items: center;
   color: var(--blue-600);
-  font-size: 1.55rem;
-  font-weight: 700;
+  background: var(--white);
+  border: 1px solid rgba(31,114,214,.22);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(3,22,47,.08);
+}
+
+.website-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .website-hero-visual {
