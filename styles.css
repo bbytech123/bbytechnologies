@@ -1274,53 +1274,12 @@ h3 {
     linear-gradient(145deg, #d7e7ff 0%, #9fc6f8 42%, #245f9f 100%);
 }
 
-.social-image::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  bottom: 18px;
-  width: 74px;
-  height: 74px;
-  border-radius: 18px 18px 30px 30px;
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.95), rgba(225,235,246,.96));
-  box-shadow: 0 14px 25px rgba(3,22,47,.18);
-}
 
-.social-image::after {
-  content: "";
-  position: absolute;
-  left: 39px;
-  bottom: 68px;
-  width: 36px;
-  height: 15px;
-  border: 6px solid rgba(11,27,47,.76);
-  border-bottom: 0;
-  border-radius: 18px 18px 0 0;
-}
-
-.social-image-scene {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 22px;
-  color: var(--white);
-  text-align: right;
-}
-
-.social-image-label {
-  font-family: "Playfair Display", serif;
-  font-size: 1.3rem;
-  line-height: 1.05;
-}
-
-.social-image-subtitle {
-  margin-top: 10px;
-  font-size: .68rem;
-  opacity: .88;
+.social-image-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .social-actions {
@@ -1397,5 +1356,3 @@ h3 {
   .agent-delivery-pill { position:static; margin-top:14px; }
   .support-channel-row { position:static; grid-template-columns:repeat(2,1fr); margin-top:14px; }
 }
-
-.social-image-photo{width:100%;height:100%;object-fit:cover;display:block;}
