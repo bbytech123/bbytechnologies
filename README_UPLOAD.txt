@@ -1,15 +1,35 @@
-BBY Technologies — Social Post White Blob Fix
+BBY Technologies — All Pages Services Dropdown Fix
 
-Replace these files in the root of your GitHub repository:
-1. ai-agents.html
-2. styles.css
+Upload all HTML files in this ZIP to the ROOT of your GitHub repository,
+replacing the existing versions.
 
-Also keep media_agent_png.png in the same root folder.
+Updated pages:
+- index.html
+- infrastructure.html
+- professional-networks.html
+- custom-websites.html
+- ai.html
+- ai-agents.html
+- automation.html
 
-The white blob was caused by the CSS pseudo-elements:
-.social-image::before
-.social-image::after
+Every page now uses the same Services menu:
 
-Those generated shapes have been removed. No other page sections were changed.
+Services
+├── Infrastructure
+│   ├── Professional Networks
+│   └── Custom Websites
+├── AI
+│   ├── AI Consulting
+│   └── AI Agents
+└── Automation
 
-After committing, wait about one minute and refresh with Ctrl + F5.
+Only the navigation dropdown was changed. Page content, visuals, text,
+and styling were left unchanged.
+
+Note:
+The AI Consulting menu link points to ai-consulting.html. That destination
+will work after the AI Consulting page is created and uploaded.
+
+After committing:
+1. Wait approximately one minute.
+2. Refresh with Ctrl + F5.

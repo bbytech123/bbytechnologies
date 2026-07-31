@@ -1,0 +1,7 @@
+index.html: Infrastructure → Professional Networks, Custom Websites; AI → AI Consulting, AI Agents; Automation
+infrastructure.html: Infrastructure → Professional Networks, Custom Websites; AI → AI Consulting, AI Agents; Automation
+professional-networks.html: Infrastructure → Professional Networks, Custom Websites; AI → AI Consulting, AI Agents; Automation
+custom-websites.html: Infrastructure → Professional Networks, Custom Websites; AI → AI Consulting, AI Agents; Automation
+ai.html: Infrastructure → Professional Networks, Custom Websites; AI → AI Consulting, AI Agents; Automation
+ai-agents.html: Infrastructure → Professional Networks, Custom Websites; AI → AI Consulting, AI Agents; Automation
+automation.html: Infrastructure → Professional Networks, Custom Websites; AI → AI Consulting, AI Agents; Automation
