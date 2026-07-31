@@ -1,35 +1,12 @@
-BBY Technologies — All Pages Services Dropdown Fix
+BBY Technologies — AI Landing Page Restore
 
-Upload all HTML files in this ZIP to the ROOT of your GitHub repository,
-replacing the existing versions.
+Replace ai.html in the root of your GitHub repository.
 
-Updated pages:
-- index.html
-- infrastructure.html
-- professional-networks.html
-- custom-websites.html
-- ai.html
-- ai-agents.html
-- automation.html
+This restores the two AI service cards:
+- AI Consulting
+- AI Agents
 
-Every page now uses the same Services menu:
+The corrected Services dropdown remains intact.
+No CSS or JavaScript files need to be replaced.
 
-Services
-├── Infrastructure
-│   ├── Professional Networks
-│   └── Custom Websites
-├── AI
-│   ├── AI Consulting
-│   └── AI Agents
-└── Automation
-
-Only the navigation dropdown was changed. Page content, visuals, text,
-and styling were left unchanged.
-
-Note:
-The AI Consulting menu link points to ai-consulting.html. That destination
-will work after the AI Consulting page is created and uploaded.
-
-After committing:
-1. Wait approximately one minute.
-2. Refresh with Ctrl + F5.
+After committing, wait about one minute and refresh with Ctrl + F5.
