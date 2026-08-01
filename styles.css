@@ -1356,3 +1356,34 @@ h3 {
   .agent-delivery-pill { position:static; margin-top:14px; }
   .support-channel-row { position:static; grid-template-columns:repeat(2,1fr); margin-top:14px; }
 }
+
+
+/* Custom Dashboards page */
+.dashboard-intro {
+  padding-top: 76px;
+}
+
+.dashboard-hero-visual {
+  overflow: hidden;
+  margin-top: 52px;
+  background: var(--navy-950);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 70px rgba(3, 22, 47, .16);
+}
+
+.dashboard-hero-visual img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.dashboard-examples {
+  padding-top: 30px;
+}
+
+@media (max-width: 560px) {
+  .dashboard-hero-visual {
+    border-radius: var(--radius-md);
+  }
+}
