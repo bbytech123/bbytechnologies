@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Infrastructure services from BBY Technologies, including professional networks and custom websites." />
-  <title>Infrastructure | BBY Technologies</title>
+  <meta name="description" content="Custom dashboards that turn scattered business information into clear, useful views." />
+  <title>Dashboards | BBY Technologies</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -12,14 +12,21 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">BBY</span><span class="brand-name">Technologies</span></a>
+    <a class="brand" href="index.html" aria-label="BBY Technologies home">
+      <span class="brand-mark">BBY</span>
+      <span class="brand-name">Technologies</span>
+    </a>
+
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav">
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle active" type="button" aria-expanded="false">Services <span>⌄</span></button>
+        <button class="nav-dropdown-toggle active" type="button" aria-expanded="false">
+          Services <span aria-hidden="true">⌄</span>
+        </button>
         <div class="nav-dropdown-menu">
           <div class="nav-submenu">
-            <a class="nav-submenu-label active" href="infrastructure.html">
+            <a class="nav-submenu-label" href="infrastructure.html">
               Infrastructure <span aria-hidden="true">›</span>
             </a>
             <div class="nav-submenu-panel">
@@ -39,16 +46,17 @@
           </div>
 
           <div class="nav-submenu">
-            <a class="nav-submenu-label" href="automation.html">
+            <a class="nav-submenu-label active" href="automation.html">
               Automation <span aria-hidden="true">›</span>
             </a>
             <div class="nav-submenu-panel">
-              <a href="dashboards.html">Dashboards</a>
+              <a class="active" href="dashboards.html">Dashboards</a>
               <a href="data-automation.html">Data Automation</a>
             </div>
           </div>
         </div>
       </div>
+
       <a href="index.html#process">How It Works</a>
       <a href="index.html#about">About</a>
       <a class="nav-contact" href="index.html#contact">Contact</a>
@@ -59,36 +67,42 @@
     <section class="service-hero">
       <div class="service-hero-blob" aria-hidden="true"></div>
       <div class="section-shell service-hero-inner reveal">
-        <p class="eyebrow">Services</p>
-        <h1>Infrastructure</h1>
-        <p>Reliable technology foundations designed to keep your business, home, and online presence connected.</p>
+        <p class="eyebrow">Services / Automation</p>
+        <h1>Dashboards</h1>
+        <p>Custom dashboards that turn scattered business information into clear, useful views.</p>
       </div>
     </section>
 
-    <section class="content-section section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Infrastructure services</p>
-        <h2>Practical technology built around your environment.</h2>
+    <div class="breadcrumb-bar">
+      <div class="section-shell breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <a href="index.html#services">Services</a>
+        <span>›</span>
+        <a href="automation.html">Automation</a>
+        <span>›</span>
+        <strong>Dashboards</strong>
       </div>
+    </div>
 
-      <div class="infrastructure-card-grid">
-        <a class="feature-link-card reveal" href="professional-networks.html">
-          <div><span class="card-number">01</span><h3>Professional Networks</h3><p>Secure, high-performance networking for small businesses, intelligent homes, and intense offices.</p></div>
-          <span class="feature-arrow">→</span>
-        </a>
-
-        <a class="feature-link-card reveal" href="custom-websites.html">
-          <div><span class="card-number">02</span><h3>Custom Websites</h3><p>Professional websites that clearly explain your value, work across devices, and give clients an easy way to reach you.</p></div>
-          <span class="feature-arrow">→</span>
-        </a>
+    <section class="content-section section-shell">
+      <div class="placeholder-card reveal">
+        <p class="eyebrow">Dashboard services</p>
+        <h2>See what matters without digging through the data.</h2>
+        <p>This page is ready for dashboard examples, data sources, reporting features, and the types of decisions your custom dashboard can support.</p>
+        <a class="button button-primary" href="index.html#contact">Start a Conversation</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer section-shell">
-    <div><strong>BBY Technologies</strong><p>Infrastructure • AI • Automation</p></div>
+    <div>
+      <strong>BBY Technologies</strong>
+      <p>Infrastructure • AI • Automation</p>
+    </div>
     <p>© <span id="year"></span> BBY Technologies. Austin, Texas.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

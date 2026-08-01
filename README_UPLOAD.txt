@@ -1,12 +1,47 @@
-BBY Technologies — AI Landing Page Restore
+BBY Technologies — Automation Pages Update
 
-Replace ai.html in the root of your GitHub repository.
+Upload every file in this ZIP to the ROOT of your GitHub repository,
+replacing files with the same name.
 
-This restores the two AI service cards:
-- AI Consulting
-- AI Agents
+New pages:
+- dashboards.html
+- data-automation.html
 
-The corrected Services dropdown remains intact.
-No CSS or JavaScript files need to be replaced.
+Updated files:
+- automation.html
+- index.html
+- infrastructure.html
+- professional-networks.html
+- custom-websites.html
+- ai.html
+- ai-agents.html
+- script.js
+- styles.css
 
-After committing, wait about one minute and refresh with Ctrl + F5.
+The Automation landing page now matches the Infrastructure landing page
+and contains two service cards:
+1. Dashboards
+2. Data Automation
+
+The Services dropdown on every page now contains:
+
+Services
+├── Infrastructure
+│   ├── Professional Networks
+│   └── Custom Websites
+├── AI
+│   ├── AI Consulting
+│   └── AI Agents
+└── Automation
+    ├── Dashboards
+    └── Data Automation
+
+script.js was updated so all three submenus also work correctly on mobile.
+
+The new Dashboards and Data Automation pages are intentionally simple
+starter pages that match the existing site. Their detailed content can
+be built next.
+
+After committing:
+1. Wait approximately one minute.
+2. Refresh with Ctrl + F5.
