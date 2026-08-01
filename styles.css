@@ -1357,33 +1357,171 @@ h3 {
   .support-channel-row { position:static; grid-template-columns:repeat(2,1fr); margin-top:14px; }
 }
 
-
-/* Custom Dashboards page */
-.dashboard-intro {
+/* Network Optimization page */
+.network-optimization-intro {
   padding-top: 76px;
 }
 
-.dashboard-hero-visual {
+.optimization-overview-card {
+  display: grid;
+  grid-template-columns: minmax(320px, .9fr) minmax(420px, 1.1fr);
+  gap: 38px;
+  align-items: center;
+  margin-top: 54px;
+  padding: 42px;
   overflow: hidden;
-  margin-top: 52px;
-  background: var(--navy-950);
+  background: linear-gradient(145deg, #fff, #eef5ff);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  box-shadow: 0 24px 70px rgba(3, 22, 47, .16);
+  box-shadow: 0 20px 58px rgba(3, 22, 47, .09);
 }
 
-.dashboard-hero-visual img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+.optimization-overview-copy h3 {
+  margin-top: 15px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 3vw, 3rem);
 }
 
-.dashboard-examples {
-  padding-top: 30px;
+.optimization-overview-copy p,
+.optimization-card p {
+  color: var(--slate);
+}
+
+.optimization-overview-copy ul,
+.optimization-card ul {
+  margin: 22px 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.optimization-overview-copy li,
+.optimization-card li {
+  position: relative;
+  margin: 9px 0;
+  padding-left: 24px;
+  color: var(--slate);
+}
+
+.optimization-overview-copy li::before,
+.optimization-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--blue-600);
+  font-weight: 800;
+}
+
+.optimization-diagram {
+  position: relative;
+  min-height: 430px;
+  border-radius: var(--radius-md);
+  background:
+    radial-gradient(circle at center, rgba(88,169,255,.23), transparent 31%),
+    linear-gradient(145deg, var(--navy-950), var(--navy-800));
+}
+
+.optimization-core,
+.optimization-node {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  border: 1px solid rgba(88,169,255,.55);
+  box-shadow: 0 14px 34px rgba(3,22,47,.22);
+  font-weight: 700;
+}
+
+.optimization-core {
+  top: 50%;
+  left: 50%;
+  width: 132px;
+  height: 132px;
+  transform: translate(-50%, -50%);
+  background: var(--blue-gradient);
+  border: 10px solid rgba(233,243,255,.13);
+  border-radius: 50%;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+}
+
+.optimization-node {
+  width: 108px;
+  height: 58px;
+  background: rgba(255,255,255,.08);
+  border-radius: 12px;
+  font-size: .8rem;
+}
+
+.node-a { top: 46px; left: 50%; transform: translateX(-50%); }
+.node-b { top: 120px; right: 40px; }
+.node-c { right: 58px; bottom: 58px; }
+.node-d { left: 58px; bottom: 58px; }
+.node-e { top: 120px; left: 40px; }
+
+.optimization-line {
+  position: absolute;
+  z-index: 1;
+  width: 3px;
+  height: 118px;
+  background: linear-gradient(var(--blue-400), rgba(88,169,255,.12));
+  transform-origin: bottom center;
+}
+
+.line-a { top: 97px; left: 50%; transform: translateX(-50%); }
+.line-b { top: 145px; right: 175px; transform: rotate(53deg); }
+.line-c { right: 185px; bottom: 115px; transform: rotate(125deg); }
+.line-d { left: 185px; bottom: 115px; transform: rotate(-125deg); }
+.line-e { top: 145px; left: 175px; transform: rotate(-53deg); }
+
+.optimization-examples {
+  padding-top: 25px;
+}
+
+.optimization-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.optimization-card {
+  padding: 30px;
+  background: linear-gradient(155deg, #fff, #eef5ff);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: 0 15px 44px rgba(3,22,47,.07);
+}
+
+.optimization-card h3 {
+  margin-top: 17px;
+}
+
+@media (max-width: 900px) {
+  .optimization-overview-card {
+    grid-template-columns: 1fr;
+  }
+
+  .optimization-card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
-  .dashboard-hero-visual {
-    border-radius: var(--radius-md);
+  .optimization-overview-card {
+    padding: 26px;
   }
+
+  .optimization-diagram {
+    min-height: 390px;
+  }
+
+  .optimization-node {
+    width: 92px;
+    font-size: .7rem;
+  }
+
+  .node-b { right: 18px; }
+  .node-c { right: 24px; }
+  .node-d { left: 24px; }
+  .node-e { left: 18px; }
 }

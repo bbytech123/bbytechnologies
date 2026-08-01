@@ -1,41 +1,28 @@
-BBY Technologies — Custom Dashboards Update
+BBY Technologies — Network Optimization Update
 
 Upload every file in this ZIP to the ROOT of your GitHub repository,
-replacing existing files with the same names.
+replacing files with matching names.
 
-Main updates:
-- Renamed Dashboards to Custom Dashboards
-- New page: custom-dashboards.html
-- Updated Automation landing page
-- Updated Services dropdown on every current page
-- Updated links to use custom-dashboards.html
-- Included a dashboards.html redirect so old links will not break
-- Added one large dashboard hero image
-- Added three example dashboard sections:
-  1. Sales & Revenue
-  2. Operations
-  3. Technology & Systems
+Changes:
+- Completely removed the Custom Dashboards page
+- Removed the Custom Dashboards button from Automation
+- Removed Custom Dashboards from every Services dropdown
+- Automation now contains only Data Automation
+- Added Network Optimization under Infrastructure
+- Added Network Optimization to every Services dropdown
+- Added Network Optimization as card 02 on Infrastructure
+- Custom Websites is now card 03
+- Created network-optimization.html
 
-Temporary images included:
-- custom_dashboard_hero.png
-- dashboard_sales_example.png
-- dashboard_operations_example.png
-- dashboard_network_example.png
+The Network Optimization page currently includes:
+- Existing-network analysis and targeted improvement messaging
+- Audio and media system optimization
+- Camera and security-device optimization
+- Computer and business-device optimization
+- A rough visual network diagram
+- Contact call-to-action
 
-These are intentional filler graphics so the page structure can be
-reviewed before creating the final polished visuals.
-
-The Services menu now contains:
-Services
-├── Infrastructure
-│   ├── Professional Networks
-│   └── Custom Websites
-├── AI
-│   ├── AI Consulting
-│   └── AI Agents
-└── Automation
-    ├── Custom Dashboards
-    └── Data Automation
+No real client name or client-specific details are included.
 
 After uploading:
 1. Commit the files.
