@@ -9,6 +9,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .optimization-photo {
+      overflow: hidden;
+      padding: 0;
+      background: var(--navy-950);
+    }
+
+    .optimization-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 430px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: var(--radius-md);
+    }
+
+    @media (max-width: 560px) {
+      .optimization-photo img {
+        min-height: 320px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -97,18 +120,10 @@
           <a class="button button-primary" href="index.html#contact">Start a Conversation</a>
         </div>
 
-        <div class="optimization-diagram" aria-label="Network optimization diagram">
-          <div class="optimization-core">Network</div>
-          <div class="optimization-node node-a">Audio</div>
-          <div class="optimization-node node-b">Cameras</div>
-          <div class="optimization-node node-c">Computers</div>
-          <div class="optimization-node node-d">Wi-Fi</div>
-          <div class="optimization-node node-e">Smart Devices</div>
-          <span class="optimization-line line-a"></span>
-          <span class="optimization-line line-b"></span>
-          <span class="optimization-line line-c"></span>
-          <span class="optimization-line line-d"></span>
-          <span class="optimization-line line-e"></span>
+        <div class="optimization-diagram optimization-photo">
+          <img
+            src="gym_sonos.png"
+            alt="Professional audio system in a modern gym environment">
         </div>
       </div>
     </section>
