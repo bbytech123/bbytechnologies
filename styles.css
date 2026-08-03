@@ -874,6 +874,16 @@ h3 {
   font-size: clamp(3rem, 7vw, 5rem);
 }
 
+.security-shield svg {
+  width: 44%;
+  height: 44%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .security-node {
   position: absolute;
   z-index: 2;
@@ -942,8 +952,27 @@ h3 {
 
 .security-feature-grid article > span {
   color: var(--blue-600);
-  font-size: 1.9rem;
   line-height: 1;
+}
+
+.security-feature-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  background: rgba(31,114,214,.08);
+  border: 1px solid rgba(31,114,214,.18);
+  border-radius: 11px;
+}
+
+.security-feature-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .security-feature-grid h3 {
