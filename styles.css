@@ -1554,3 +1554,28 @@ h3 {
   .node-d { left: 24px; }
   .node-e { left: 18px; }
 }
+
+/* Security icon rendering fix: keep the center lock and feature icons as clean line art. */
+.security-shield svg,
+.security-feature-icon svg {
+  fill: none !important;
+  stroke: currentColor !important;
+}
+
+.security-shield svg *,
+.security-feature-icon svg * {
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 1.8 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  vector-effect: non-scaling-stroke;
+}
+
+.security-shield svg {
+  color: #ffffff;
+}
+
+.security-feature-icon {
+  color: var(--blue-600);
+}
