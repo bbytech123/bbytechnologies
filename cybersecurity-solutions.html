@@ -10,12 +10,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .security-visual { position:relative; min-height:380px; display:grid; place-items:center; padding:38px; overflow:hidden; background:linear-gradient(145deg,#061f42,#0a2d59 55%,#1f72d6); color:#fff; }
+    .network-service-list { gap: 34px; }
+    .network-service-card { grid-template-columns: minmax(340px, 0.9fr) minmax(0, 1.7fr); align-items: stretch; }
+    .network-service-copy { padding: 34px 34px 32px; }
+    .security-visual { position:relative; min-height:360px; display:grid; place-items:center; padding:22px; overflow:hidden; background:linear-gradient(145deg,#061f42,#0a2d59 55%,#1f72d6); color:#fff; }
     .security-visual::before { content:""; position:absolute; width:300px; height:300px; border-radius:50%; background:rgba(88,169,255,.16); filter:blur(2px); }
     .security-visual svg { position:relative; width:min(72%,260px); height:auto; filter:drop-shadow(0 22px 38px rgba(0,0,0,.2)); }
+    .security-visual > img { position:relative; width:100%; height:100%; min-height:316px; object-fit:cover; object-position:center; border-radius:20px; display:block; }
     .security-visual .visual-label { position:absolute; left:24px; bottom:20px; padding:8px 12px; border:1px solid rgba(255,255,255,.24); border-radius:999px; background:rgba(3,22,47,.42); backdrop-filter:blur(8px); font-size:.78rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
-    @media (max-width:860px){ .security-visual{min-height:300px} }
-    @media (max-width:560px){ .security-visual{min-height:230px;padding:26px} }
+    @media (max-width:980px){
+      .network-service-card { grid-template-columns: 1fr 1.35fr; }
+      .network-service-copy { padding: 30px; }
+    }
+    @media (max-width:860px){
+      .network-service-card { grid-template-columns: 1fr; }
+      .security-visual{min-height:300px}
+      .security-visual > img { min-height:260px; }
+    }
+    @media (max-width:560px){
+      .network-service-copy { padding: 24px; }
+      .security-visual{min-height:230px;padding:16px}
+      .security-visual > img { min-height:210px; border-radius:16px; }
+    }
   </style>
 </head>
 <body>
@@ -51,9 +67,7 @@
         <article class="network-service-card reveal">
           <div class="network-service-copy"><span class="service-icon">◈</span><h3>Firewalls &amp; Network Protection</h3><p>Your firewall is the first line of defense between your business and the public internet. A properly configured firewall can block malicious traffic, restrict risky connections, and reduce exposure to attackers ranging from automated bots and crypto thieves to organized cybercriminals and nation-state activity.</p><ul><li>Firewall installation, replacement, and configuration review</li><li>Threat blocking, intrusion prevention, and geo-based controls</li><li>Secure VPN access and network segmentation</li></ul><a class="button button-primary" href="index.html#contact">Start a Conversation</a></div>
           <div class="network-service-visual security-visual">
-  <img src="firewall.png"
-       alt="Firewall protecting a business network"
-       style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
+  <img src="firewall.png" alt="Firewall protecting a business network">
 </div>
         </article>
 
