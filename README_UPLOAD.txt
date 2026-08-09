@@ -1,35 +1,40 @@
-BBY Technologies — Cybersecurity Navigation Final Update
+BBY Technologies — Data Services Update
 
-Upload all HTML files in this ZIP to the ROOT of your GitHub repository,
-replacing files with matching names.
+Upload the files in this ZIP to the ROOT of your GitHub repository.
+Replace matching files when GitHub asks.
 
-The Services dropdown is now identical on every included page:
-
+Services dropdown is now consistent across every included live page:
 1. Infrastructure
    - Professional Networks
    - Network Optimization
    - Custom Websites
-
 2. AI
    - AI Consulting
    - AI Agents
-
 3. Cybersecurity
    - Consulting
    - Cybersecurity Solutions
+4. Data
+   - Data Storage
+   - Data Analysis
 
-4. Automation
-   - Data Automation
+New pages:
+- data.html
+- data-storage.html
+- data-analysis.html
 
-Also included:
-- index.html updated with Cybersecurity in Services
-- cybersecurity.html updated to link to Cybersecurity Solutions
-- cybersecurity-consulting.html with the updated icons
-- cybersecurity-solutions.html using the latest wider layout
+Homepage:
+- Replaces the Automation service card with Data.
 
-No styles.css or script.js changes are required.
+Old URLs preserved with redirects:
+- automation.html -> data.html
+- data-automation.html -> data.html
+- custom-dashboards.html -> data-analysis.html
+- dashboards.html -> data-analysis.html
 
-NOTE:
-The site navigation references ai-consulting.html, but that source file was not
-included among the website files available in this conversation, so that one
-page could not be updated or included in this ZIP.
+No changes are required to styles.css or script.js.
+
+Important:
+The current GitHub files supplied still reference ai-consulting.html, but
+ai-consulting.html was not included in the uploaded files, so that page could
+not be updated in this package.

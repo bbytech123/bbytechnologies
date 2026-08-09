@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Business data analysis, dashboards, reporting, spreadsheet analysis, and data consolidation from BBY Technologies." />
+  <title>Data Analysis | BBY Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="BBY Technologies home">
+      <span class="brand-mark">BBY</span><span class="brand-name">Technologies</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle active" type="button" aria-expanded="false">Services <span aria-hidden="true">⌄</span></button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-submenu">
+            <a class="nav-submenu-label" href="infrastructure.html">
+              Infrastructure <span aria-hidden="true">›</span>
+            </a>
+            <div class="nav-submenu-panel">
+              <a href="professional-networks.html">Professional Networks</a>
+              <a href="network-optimization.html">Network Optimization</a>
+              <a href="custom-websites.html">Custom Websites</a>
+            </div>
+          </div>
+
+          <div class="nav-submenu">
+            <a class="nav-submenu-label" href="ai.html">
+              AI <span aria-hidden="true">›</span>
+            </a>
+            <div class="nav-submenu-panel">
+              <a href="ai-consulting.html">AI Consulting</a>
+              <a href="ai-agents.html">AI Agents</a>
+            </div>
+          </div>
+
+          <div class="nav-submenu">
+            <a class="nav-submenu-label" href="cybersecurity.html">
+              Cybersecurity <span aria-hidden="true">›</span>
+            </a>
+            <div class="nav-submenu-panel">
+              <a href="cybersecurity-consulting.html">Consulting</a>
+              <a href="cybersecurity-solutions.html">Cybersecurity Solutions</a>
+            </div>
+          </div>
+
+          <div class="nav-submenu">
+            <a class="nav-submenu-label active" href="data.html">
+              Data <span aria-hidden="true">›</span>
+            </a>
+            <div class="nav-submenu-panel">
+              <a href="data-storage.html">Data Storage</a>
+              <a class="active" href="data-analysis.html">Data Analysis</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="index.html#process">How It Works</a>
+      <a href="index.html#about">About</a>
+      <a class="nav-contact" href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="service-hero">
+      <div class="service-hero-blob" aria-hidden="true"></div>
+      <div class="section-shell service-hero-inner reveal">
+        <p class="eyebrow">Services / Data</p>
+        <h1>Data Analysis</h1>
+        <p>Turn scattered information into clearer reporting, useful dashboards, and better business decisions.</p>
+      </div>
+    </section>
+
+    <div class="breadcrumb-bar">
+      <div class="section-shell breadcrumbs">
+        <a href="index.html">Home</a><span>›</span>
+        <a href="index.html#services">Services</a><span>›</span>
+        <a href="data.html">Data</a><span>›</span>
+        <strong>Data Analysis</strong>
+      </div>
+    </div>
+
+    <section class="content-section section-shell optimization-examples">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Make the information useful</p>
+        <h2>See what your data is actually telling you.</h2>
+        <p>I can help bring information together, clean it up, and present it in a way that makes important trends and numbers easier to understand.</p>
+      </div>
+
+      <div class="optimization-card-grid">
+        <article class="optimization-card reveal">
+          <h3>Dashboards &amp; Reporting</h3>
+          <p>Create clear views of the numbers that matter most to the business without digging through multiple systems every time.</p>
+          <ul><li>Custom business dashboards</li><li>KPI and performance reporting</li><li>Executive-friendly views</li></ul>
+        </article>
+        <article class="optimization-card reveal">
+          <h3>Spreadsheet Analysis</h3>
+          <p>Clean up and analyze Excel or CSV data so recurring reports and one-off questions are easier to answer.</p>
+          <ul><li>Data cleanup and organization</li><li>Trend and comparison analysis</li><li>Reusable reporting templates</li></ul>
+        </article>
+        <article class="optimization-card reveal">
+          <h3>Data Consolidation</h3>
+          <p>Combine information from multiple exports, tools, or departments into a more consistent view.</p>
+          <ul><li>Merge scattered data sources</li><li>Standardize fields and formats</li><li>Reduce manual report preparation</li></ul>
+        </article>
+        <article class="optimization-card reveal">
+          <h3>Practical Business Insights</h3>
+          <p>Focus analysis on questions that help the business make decisions rather than producing reports for the sake of reporting.</p>
+          <ul><li>Operational and financial trends</li><li>Exception and problem identification</li><li>Clear summaries and recommendations</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="service-cta section-shell reveal">
+      <div><p class="eyebrow">Clearer information</p><h2>Turn business data into something you can actually use.</h2><p>Share the reports, spreadsheets, or systems you work with today. I can help turn them into a clearer and more repeatable view.</p></div>
+      <div class="hero-actions"><a class="button button-primary" href="index.html#contact">Start a Conversation</a><a class="button button-secondary" href="data.html">View Data Services</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div><strong>BBY Technologies</strong><p>Infrastructure • AI • Cybersecurity • Data</p></div>
+    <p>© <span id="year"></span> BBY Technologies. Austin, Texas.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

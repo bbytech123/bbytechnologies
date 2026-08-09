@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cybersecurity services from BBY Technologies, including security consulting and security optimization." />
-  <title>Cybersecurity | BBY Technologies</title>
+  <meta name="description" content="Data storage and analysis services from BBY Technologies for small businesses." />
+  <title>Data | BBY Technologies</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -12,11 +12,13 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">BBY</span><span class="brand-name">Technologies</span></a>
+    <a class="brand" href="index.html" aria-label="BBY Technologies home">
+      <span class="brand-mark">BBY</span><span class="brand-name">Technologies</span>
+    </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav">
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle active" type="button" aria-expanded="false">Services <span>⌄</span></button>
+        <button class="nav-dropdown-toggle active" type="button" aria-expanded="false">Services <span aria-hidden="true">⌄</span></button>
         <div class="nav-dropdown-menu">
           <div class="nav-submenu">
             <a class="nav-submenu-label" href="infrastructure.html">
@@ -40,7 +42,7 @@
           </div>
 
           <div class="nav-submenu">
-            <a class="nav-submenu-label active" href="cybersecurity.html">
+            <a class="nav-submenu-label" href="cybersecurity.html">
               Cybersecurity <span aria-hidden="true">›</span>
             </a>
             <div class="nav-submenu-panel">
@@ -50,7 +52,7 @@
           </div>
 
           <div class="nav-submenu">
-            <a class="nav-submenu-label" href="data.html">
+            <a class="nav-submenu-label active" href="data.html">
               Data <span aria-hidden="true">›</span>
             </a>
             <div class="nav-submenu-panel">
@@ -71,35 +73,47 @@
       <div class="service-hero-blob" aria-hidden="true"></div>
       <div class="section-shell service-hero-inner reveal">
         <p class="eyebrow">Services</p>
-        <h1>Cybersecurity</h1>
-        <p>Practical security services designed to reduce risk, strengthen your environment, and protect the technology your business depends on.</p>
+        <h1>Data</h1>
+        <p>Practical ways to store, organize, and understand the information your business depends on.</p>
       </div>
     </section>
 
     <section class="content-section section-shell">
       <div class="section-heading reveal">
-        <p class="eyebrow">Cybersecurity services</p>
-        <h2>Practical security built around your environment.</h2>
+        <p class="eyebrow">Data services</p>
+        <h2>Keep your information organized and useful.</h2>
+        <p>Whether you need a better place to keep business files or a clearer way to understand the information you already have, I can help build a practical solution around your environment.</p>
       </div>
 
       <div class="infrastructure-card-grid">
-        <a class="feature-link-card reveal" href="cybersecurity-consulting.html">
+        <a class="feature-link-card reveal" href="data-storage.html">
           <div>
             <span class="card-number">01</span>
-            <h3>Consulting</h3>
-            <p>Understand your current security posture, identify risks, and build a practical roadmap for improving protection across your business.</p>
+            <h3>Data Storage</h3>
+            <p>Build a reliable home for business files using cloud storage, shared drives, NAS systems, and organized access.</p>
           </div>
-          <span class="feature-arrow" aria-hidden="true">→</span>
+          <span class="feature-link-arrow" aria-hidden="true">→</span>
         </a>
 
-        <a class="feature-link-card reveal" href="cybersecurity-solutions.html">
+        <a class="feature-link-card reveal" href="data-analysis.html">
           <div>
             <span class="card-number">02</span>
-            <h3>Cybersecurity Solutions</h3>
-            <p>Review and improve existing security controls, configurations, access, and network protections to reduce unnecessary exposure.</p>
+            <h3>Data Analysis</h3>
+            <p>Turn spreadsheets, reports, and scattered business information into clearer insights, dashboards, and useful reporting.</p>
           </div>
-          <span class="feature-arrow" aria-hidden="true">→</span>
+          <span class="feature-link-arrow" aria-hidden="true">→</span>
         </a>
+      </div>
+    </section>
+
+    <section class="service-cta section-shell reveal">
+      <div>
+        <p class="eyebrow">Start with the information you already have</p>
+        <h2>Make your business data easier to store, find, and use.</h2>
+        <p>Tell me where your information lives today and what you want to improve. I can help plan the right next step without adding unnecessary complexity.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-primary" href="index.html#contact">Start a Conversation</a>
       </div>
     </section>
   </main>

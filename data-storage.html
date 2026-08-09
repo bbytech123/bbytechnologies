@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Business data storage planning, cloud file storage, NAS, migrations, and backup guidance from BBY Technologies." />
+  <title>Data Storage | BBY Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="BBY Technologies home">
+      <span class="brand-mark">BBY</span><span class="brand-name">Technologies</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle active" type="button" aria-expanded="false">Services <span aria-hidden="true">⌄</span></button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-submenu">
+            <a class="nav-submenu-label" href="infrastructure.html">
+              Infrastructure <span aria-hidden="true">›</span>
+            </a>
+            <div class="nav-submenu-panel">
+              <a href="professional-networks.html">Professional Networks</a>
+              <a href="network-optimization.html">Network Optimization</a>
+              <a href="custom-websites.html">Custom Websites</a>
+            </div>
+          </div>
+
+          <div class="nav-submenu">
+            <a class="nav-submenu-label" href="ai.html">
+              AI <span aria-hidden="true">›</span>
+            </a>
+            <div class="nav-submenu-panel">
+              <a href="ai-consulting.html">AI Consulting</a>
+              <a href="ai-agents.html">AI Agents</a>
+            </div>
+          </div>
+
+          <div class="nav-submenu">
+            <a class="nav-submenu-label" href="cybersecurity.html">
+              Cybersecurity <span aria-hidden="true">›</span>
+            </a>
+            <div class="nav-submenu-panel">
+              <a href="cybersecurity-consulting.html">Consulting</a>
+              <a href="cybersecurity-solutions.html">Cybersecurity Solutions</a>
+            </div>
+          </div>
+
+          <div class="nav-submenu">
+            <a class="nav-submenu-label active" href="data.html">
+              Data <span aria-hidden="true">›</span>
+            </a>
+            <div class="nav-submenu-panel">
+              <a class="active" href="data-storage.html">Data Storage</a>
+              <a href="data-analysis.html">Data Analysis</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="index.html#process">How It Works</a>
+      <a href="index.html#about">About</a>
+      <a class="nav-contact" href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="service-hero">
+      <div class="service-hero-blob" aria-hidden="true"></div>
+      <div class="section-shell service-hero-inner reveal">
+        <p class="eyebrow">Services / Data</p>
+        <h1>Data Storage</h1>
+        <p>Reliable, organized storage built around how your team actually works.</p>
+      </div>
+    </section>
+
+    <div class="breadcrumb-bar">
+      <div class="section-shell breadcrumbs">
+        <a href="index.html">Home</a><span>›</span>
+        <a href="index.html#services">Services</a><span>›</span>
+        <a href="data.html">Data</a><span>›</span>
+        <strong>Data Storage</strong>
+      </div>
+    </div>
+
+    <section class="content-section section-shell optimization-examples">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Storage that fits the business</p>
+        <h2>Give your files a reliable place to live.</h2>
+        <p>I can help organize business data, choose the right storage platform, and improve how employees access and protect shared information.</p>
+      </div>
+
+      <div class="optimization-card-grid">
+        <article class="optimization-card reveal">
+          <h3>Cloud File Storage</h3>
+          <p>Plan and configure shared business storage using platforms such as SharePoint, OneDrive, and Google Shared Drives.</p>
+          <ul><li>Shared folders and permissions</li><li>File organization and access planning</li><li>Cloud migration guidance</li></ul>
+        </article>
+        <article class="optimization-card reveal">
+          <h3>NAS &amp; Local Storage</h3>
+          <p>Use local or hybrid storage when the business needs centralized files, large capacity, fast local access, or additional control.</p>
+          <ul><li>NAS design and deployment</li><li>Shared storage and user access</li><li>Cloud and local hybrid options</li></ul>
+        </article>
+        <article class="optimization-card reveal">
+          <h3>Migration &amp; Organization</h3>
+          <p>Move existing files into a cleaner structure while reducing duplicates, confusing folders, and unnecessary access.</p>
+          <ul><li>File and folder migration</li><li>Storage cleanup and planning</li><li>Permission review</li></ul>
+        </article>
+        <article class="optimization-card reveal">
+          <h3>Backup &amp; Resilience</h3>
+          <p>Make sure important business information is not dependent on one device, one account, or one copy of a file.</p>
+          <ul><li>Backup strategy planning</li><li>Cloud and local backup options</li><li>Recovery and retention considerations</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="service-cta section-shell reveal">
+      <div><p class="eyebrow">Better storage</p><h2>Make business files easier to manage and harder to lose.</h2><p>Tell me where your data lives today and what is causing problems. I can help design a cleaner storage approach.</p></div>
+      <div class="hero-actions"><a class="button button-primary" href="index.html#contact">Start a Conversation</a><a class="button button-secondary" href="data.html">View Data Services</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div><strong>BBY Technologies</strong><p>Infrastructure • AI • Cybersecurity • Data</p></div>
+    <p>© <span id="year"></span> BBY Technologies. Austin, Texas.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
