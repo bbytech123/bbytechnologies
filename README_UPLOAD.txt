@@ -1,40 +1,23 @@
-BBY Technologies — Data Services Update
+BBY Technologies — AI Removal Update
 
-Upload the files in this ZIP to the ROOT of your GitHub repository.
-Replace matching files when GitHub asks.
+Upload the contents of this folder/ZIP to the ROOT of your GitHub repository. Replace matching files when GitHub asks.
 
-Services dropdown is now consistent across every included live page:
+Changes:
+- Removed AI from the Services dropdown on all live pages.
+- Removed AI Consulting and AI Agents submenu links.
+- Removed AI references from the homepage hero, project examples, and site footers.
+- Removed AI Agents-specific CSS.
+- AI pages are intentionally NOT included in this package. Delete ai.html, ai-consulting.html, and ai-agents.html from the GitHub repository if they currently exist.
+
+Remaining Services dropdown:
 1. Infrastructure
    - Professional Networks
    - Network Optimization
    - Custom Websites
-2. AI
-   - AI Consulting
-   - AI Agents
-3. Cybersecurity
+   - Toast POS Networks
+2. Cybersecurity
    - Consulting
    - Cybersecurity Solutions
-4. Data
+3. Data
    - Data Storage
    - Data Analysis
-
-New pages:
-- data.html
-- data-storage.html
-- data-analysis.html
-
-Homepage:
-- Replaces the Automation service card with Data.
-
-Old URLs preserved with redirects:
-- automation.html -> data.html
-- data-automation.html -> data.html
-- custom-dashboards.html -> data-analysis.html
-- dashboards.html -> data-analysis.html
-
-No changes are required to styles.css or script.js.
-
-Important:
-The current GitHub files supplied still reference ai-consulting.html, but
-ai-consulting.html was not included in the uploaded files, so that page could
-not be updated in this package.
