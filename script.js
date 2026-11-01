@@ -1,71 +1,52 @@
+'use strict';
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
-const serviceDropdown = document.querySelector('.nav-dropdown');
+const dropdown = document.querySelector('.nav-dropdown');
 const serviceToggle = document.querySelector('.nav-dropdown-toggle');
-const serviceSubmenus = document.querySelectorAll('.nav-submenu');
-
-menuButton?.addEventListener('click', () => {
-  const isOpen = siteNav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
-});
-
-serviceToggle?.addEventListener('click', (event) => {
-  event.preventDefault();
-  event.stopPropagation();
-  const isOpen = serviceDropdown.classList.toggle('open');
-  serviceToggle.setAttribute('aria-expanded', String(isOpen));
-});
-
-serviceSubmenus.forEach((submenu) => {
-  const toggle = submenu.querySelector('.nav-submenu-label');
-
-  toggle?.addEventListener('click', (event) => {
-    if (window.matchMedia('(max-width: 860px)').matches) {
-      event.preventDefault();
-      event.stopPropagation();
-
-      serviceSubmenus.forEach((otherSubmenu) => {
-        if (otherSubmenu !== submenu) {
-          otherSubmenu.classList.remove('open');
-        }
-      });
-
-      submenu.classList.toggle('open');
-    }
-  });
-});
-
+const serviceMenu = document.querySelector('#services-menu');
+const mobile = window.matchMedia('(max-width: 860px)');
+function setServices(open) {
+  dropdown?.classList.toggle('open', open);
+  serviceToggle?.setAttribute('aria-expanded', String(open));
+  if (serviceMenu) serviceMenu.hidden = !open;
+}
+function setMenu(open) {
+  siteNav?.classList.toggle('open', open);
+  menuButton?.setAttribute('aria-expanded', String(open));
+  if (!open) setServices(false);
+}
+menuButton?.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+serviceToggle?.addEventListener('click', () => setServices(serviceToggle.getAttribute('aria-expanded') !== 'true'));
 document.addEventListener('click', (event) => {
-  if (!serviceDropdown?.contains(event.target)) {
-    serviceDropdown?.classList.remove('open');
-    serviceSubmenus.forEach((submenu) => submenu.classList.remove('open'));
-    serviceToggle?.setAttribute('aria-expanded', 'false');
+  if (!dropdown?.contains(event.target)) setServices(false);
+  if (mobile.matches && !siteNav?.contains(event.target) && !menuButton?.contains(event.target)) setMenu(false);
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  if (serviceToggle?.getAttribute('aria-expanded') === 'true') {
+    setServices(false); serviceToggle.focus();
+  } else if (menuButton?.getAttribute('aria-expanded') === 'true') {
+    setMenu(false); menuButton.focus();
   }
 });
-
-siteNav?.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    if (!window.matchMedia('(max-width: 860px)').matches || !link.classList.contains('nav-submenu-label')) {
-      siteNav.classList.remove('open');
-      menuButton?.setAttribute('aria-expanded', 'false');
-    }
-  });
+siteNav?.addEventListener('focusout', (event) => {
+  if (!siteNav.contains(event.relatedTarget) && event.relatedTarget !== menuButton) {
+    setServices(false); if (mobile.matches) setMenu(false);
+  }
 });
+siteNav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+mobile.addEventListener('change', () => setMenu(false));
+document.querySelectorAll('#year').forEach(el => { el.textContent = String(new Date().getFullYear()); });
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-
-document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
-
-document.querySelectorAll('#year').forEach((element) => {
-  element.textContent = new Date().getFullYear();
-});
+// Shared links reveal the relevant inline service without changing other panels.
+function revealLinkedService() {
+  let id;
+  try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+  const panel = document.getElementById(id);
+  if (panel?.matches('details.service-accordion')) {
+    panel.open = true;
+    requestAnimationFrame(() => panel.scrollIntoView({block: 'start'}));
+  }
+}
+window.addEventListener('hashchange', revealLinkedService);
+revealLinkedService();

@@ -1377,3 +1377,9 @@ h3 {
     border-radius: 18px;
   }
 }
+
+/* First homepage structure revision: clear separation and three audiences. */
+.home-page .hero { border-bottom: 1px solid rgba(81, 133, 174, .28); }
+.audience-grid .pillar-card { display: flex; flex-direction: column; }
+.audience-grid .card-link { margin-top: auto; padding-top: 18px; }
+.audience-grid h3 { line-height: 1.25; }
