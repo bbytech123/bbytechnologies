@@ -1,0 +1,24 @@
+BBY Technologies — About page upload
+
+For the production bbytechnologies.com GitHub repository.
+
+1. Extract this ZIP.
+2. Open the repository root (where index.html and about.html live).
+3. Choose Add file → Upload files.
+4. Upload these three files directly into that root:
+   about.html (replaces the existing placeholder)
+   about-page.css (new, scoped only to the About page)
+   braxton-about.jpg (new, the photo you supplied)
+5. Commit the upload. After GitHub Pages redeploys, open:
+   https://bbytechnologies.com/about.html
+6. If the old page appears, refresh with Ctrl+Shift+R.
+
+Do not upload this ZIP itself. No shared CSS, homepage, navigation, or other pages need replacement. Existing About links already point to this page.
+
+The supplied photo is included unchanged. The page uses the existing production fonts, header, footer, contact section, and site styles. The About page uses the same BBY branded social-preview image as the homepage.
+
+Copy used:
+Hi, I’m Braxton.
+Owner · Austin, Texas
+I help businesses and homes build reliable networks, improve Wi-Fi, and keep their technology secure.
+BBY Technologies is about practical solutions and clear communication, from the first conversation to the finished setup.
