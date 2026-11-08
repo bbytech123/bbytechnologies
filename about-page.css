@@ -1,13 +1,13 @@
-/* Preserve the portrait/text left positions while letting the copy reach the shared header edge. */
+/* Enlarge the portrait toward the shared header edge and center it beside the full biography. */
 /* About page only. Existing shared site files are unchanged. */
 .about-page .founder-section{padding-block:76px 84px}
-.about-page .founder-layout{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(36px,6vw,88px);padding-inline-start:max(0px,calc((100% - 860px - clamp(36px,6vw,88px))/2));align-items:start;justify-content:center}
+.about-page .founder-layout{display:grid;grid-template-columns:minmax(0,calc(280px + max(0px,(100% - 860px - clamp(36px,6vw,88px))/2) - 16px)) minmax(0,1fr);gap:clamp(36px,6vw,88px);padding-inline-start:16px;align-items:center;justify-content:center}
 .about-page .founder-portrait{display:block;width:100%;height:auto;border:1px solid rgba(155,200,255,.4);border-radius:20px;box-shadow:0 18px 50px #0003}
 .about-page .founder-copy h1{font-size:clamp(2.6rem,4.5vw,4.4rem);line-height:1.08;letter-spacing:-.045em;margin:0 0 18px}
 .about-page .founder-copy .eyebrow{margin-bottom:18px}
-.about-page .founder-copy p:not(.eyebrow):not(.founder-role){font-size:1.08rem;line-height:1.8;color:#c4d0dd;max-width:none;margin:0 0 18px}
-.about-page .founder-role{color:#9bc8ff;font-size:1rem;font-weight:600;margin:0 0 28px}
-@media(max-width:700px){.about-page .founder-section{padding-block:40px 56px}.about-page .founder-layout{grid-template-columns:1fr;gap:32px;padding-inline-start:0}.about-page .founder-portrait{width:min(100%,250px);justify-self:center}.about-page .founder-copy{width:100%;max-width:none;margin-inline:0}.about-page .founder-copy h1{font-size:clamp(2.5rem,9vw,3.5rem)}.about-page .founder-copy p:not(.eyebrow):not(.founder-role){font-size:1rem}}
+.about-page .founder-copy p:not(.eyebrow){font-size:1.08rem;line-height:1.8;color:#c4d0dd;max-width:none;margin:0 0 18px}
+.about-page .founder-copy p:last-child{margin-bottom:0}
+@media(max-width:700px){.about-page .founder-section{padding-block:40px 56px}.about-page .founder-layout{grid-template-columns:1fr;gap:32px;padding-inline-start:0}.about-page .founder-portrait{width:min(100% - 32px,380px);justify-self:center}.about-page .founder-copy{width:100%;max-width:none;margin-inline:0}.about-page .founder-copy h1{font-size:clamp(2.5rem,9vw,3.5rem)}.about-page .founder-copy p:not(.eyebrow){font-size:1rem}}
 
 /* Keep all three inline links blue, including after they have been visited. */
 .about-page .founder-copy .founder-link,
