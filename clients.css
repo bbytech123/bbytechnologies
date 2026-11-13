@@ -105,3 +105,16 @@
   .client-logo-grid--three { grid-template-columns: 1fr; gap: 36px; }
   .client-logo-grid--three .client-logo-card { width: min(320px, 90%); justify-self: center; }
 }
+
+/* Use the approved blue artwork directly, without CSS glow or repainting. */
+.client-logo-grid--three .angels-mark,
+.client-logo-grid--three .korrect-mark { filter: none; overflow: hidden; }
+.client-logo-grid--three .angels-mark::after,
+.client-logo-grid--three .korrect-mark::after { content: none; }
+.client-logo-grid--three .angels-mark img,
+.client-logo-grid--three .korrect-mark img { filter: none; position: absolute; max-width: none; height: auto !important; }
+/* Account for transparent margins in the supplied PNGs without altering them. */
+.client-logo-grid--three .angels-mark { height: auto; aspect-ratio: 913 / 582; }
+.client-logo-grid--three .angels-mark img { width: 161.34% !important; left: -34.61%; top: -44.16%; }
+.client-logo-grid--three .korrect-mark { height: auto; aspect-ratio: 1334 / 350; }
+.client-logo-grid--three .korrect-mark img { width: 137.71% !important; left: -16.87%; top: -71.14%; }
